@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta char="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+        <label id="name-label" for="name">Name <input id="name" type="text" placeholder="Enter your name" required></label>
+        <label id="email-label" for="email">Email <input id="email" type="email" placeholder="Enter your email" required></label>
+        <label id="number-label" for="number">Age<label class="small">(optional)</label> <input id="number" type="number" min="10" max="99" placeholder="Age" required></label>
+        <label> Would you recommend freeCodeCamp to a friend?
+            <select id="dropdown">
+                <option disabled="disabled" selected="selected">Select current role</option>
+                <option>Student</option>
+                <option>Full Time Job</option>
+            </select>
+        </label>
+        <label>
+            Would you recommend freeCodeCamp to a friend?
+          <label for="Definitely"></label><input type="radio" id="Definitely" name="recommend" value="Definitely" class="inline">Definitely</label>
+          <label for="Maybe"></label><input type="radio" id="Maybe" name="recommend" value="Maybe" class="inline">Maybe</label>
+          <label for="Not sure"></label><input type="radio" id="Not sure" name="recommend" value="Not sure" class="inline">Not sure</label>
+        </label>
+        <label>
+          What would you like to see improved? <label class="small">(Check all that apply)</label>
+          <label for="Front-end"></label><input type="checkbox" id="Front-end" value="Front-end" class="inline">Front-end Projects</label>
+          <label for="back-end"></label><input type="checkbox" id="back-end" value="back-end" class="inline">Back-end Projects</label>
+          <label for="data"></label><input type="checkbox" id="data" value="data" class="inline">Data Visualization</label>
+        </label>
+        <label>
+          Any comments or suggestions?
+          <textarea id="suggestions" name="suggestions" placeholder="Enter your comment here..."></textarea>
+        </label>
+        <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
