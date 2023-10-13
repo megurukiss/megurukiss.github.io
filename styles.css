@@ -1,0 +1,173 @@
+html{
+    box-sizing: border-box;
+}
+body{
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: fixed;
+    width:100%;
+    height:75px;
+    display: flex;
+    align-items: center;
+    top:0;
+    padding:20px;
+    margin: 0;
+    background-color: #eee;
+}
+@media (max-width: 600px) {
+    header {
+      flex-wrap: wrap;
+    }
+  }
+header #imgcontainer{
+    width:60%;
+    display: flex;
+    align-items: center;
+}
+header img{
+    width: 100%;
+    height:auto;
+    max-width: 300px;
+    justify-content: flex-start;
+}
+header nav{
+    width:40%;
+    justify-content:flex-end;
+}
+header nav ul{
+    display:flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    text-align: center;
+    align-items: center;
+}
+.nav-link{
+    text-decoration: none;
+    color:black;
+}
+#getemail{
+    padding-top: 75px;
+    padding-bottom: 20px;
+    margin:20px auto;
+    text-align: center;
+}
+#email{
+    width:250px;
+    height: 30px;
+}
+#submit{
+    display: block;
+    margin:5px auto;
+    color:black;
+    background-color:orange;
+    border-radius: 5px;
+    width: 100px;
+    height: auto;
+}
+#features{
+    padding:20px;
+}
+.row{
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    margin:10px auto;
+}
+.row:first{
+    margin-top: 0;
+}
+.icontainer{
+    height: 200px;
+    width:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+i{
+    color:orange;
+}
+.f1{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+}
+
+#howitworks{
+    padding:40px;
+    max-width: 1000px;
+    width:100%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+iframe{
+    height:250px;
+    width: 500px;
+}
+#pricing{
+    padding-top:40px;
+    display: flex;
+    justify-content: center;
+}
+.box{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:15%;
+    margin: 10px;
+}
+.headline{
+    width:100%;
+    padding: 10px 0;
+    background-color: #ddd;
+    color: black;
+    text-align: center;
+}
+#pricing h2{
+    margin:20px auto;
+    margin-bottom: 5px;
+}
+#pricing ul{
+    list-style-type: none;
+    margin-top: 0;
+}
+#pricing ul li{
+    margin:10px;
+}
+#pricing button{
+    margin-bottom: 10px;
+    background-color: orange;
+    border: 0;
+    width: 80px;
+    height:30px;
+    border-radius: 5px;
+}
+footer{
+    margin-top: 20px;
+    width: 100%;
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 0;
+}
+footer ul{
+    padding-top: 15px;
+    list-style-type: none;
+    margin:0 10px;
+    display: flex;
+}
+footer ul li{
+    padding:0 10px;
+}
+footer div{
+    padding:15px;
+}
